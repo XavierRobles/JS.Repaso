@@ -1,47 +1,117 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="text/javascript" src="ActividadFormulario.js"></script>
-    <link rel="stylesheet" href="css/ActividadFormulario.css">
+    <link rel="stylesheet" href="css/ActividadFormulario.css" />
     <title>Actividad Formulario</title>
-</head>
-<body onload="inicio();">
-    
+  </head>
+  <body onload="inicio();">
     <div>
-        <h1>Actividad Formulario - Lenguaje de marcas</h1>
-        <form action="mailto:Xavier.robles.r@gmail.com" name=" DatosPersonales" method="POST" onsubmit="return validarForm()">
+      <h1>Actividad Formulario - Lenguaje de marcas</h1>
+      <form
+        action="mailto:Xavier.robles.r@gmail.com"
+        name=" DatosPersonales"
+        method="POST"
+        onsubmit="return validar()"
+      >
         <fieldset>
-            <legend>Datos Personales</legend>
-            Nombre: <input type="text" name="nombre" size="30" placeholder="Introduzca su nombre..." required>
-           1º Apellido: <input type="text" name="apellido1" size="30" placeholder="Introduzca su 1º apellido..." required>
-           2º Apellido: <input type="text" name="apellido2" size="30" placeholder="Introduzca su 2º apellido..." required>
-           
-           <br>
-          Direccion postal <textarea name="dir" id="dir" cols="90" rows="3" placeholder="Introduzca aqui su direccion postal"></textarea>
-          <br><br>
-          Codigo postal <input type="number" placeholder="Numero postal 28000..."> Provincia <input type="text" placeholder="Provincia..."> Poblacion <input type="text" placeholder="Poblacion..."> Pais <input type="text" placeholder="Pais...">
-          <br>
-          <br>
-         
-           
-          Edad <select name="edad" id="edad">
-        </select>
-     
+          <legend>Datos Personales</legend>
+          Nombre:
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            size="30"
+            placeholder="Introduzca su nombre..."
+            
+          />
+          1º Apellido:
+          <input
+            type="text"
+            name="apellido1"
+            id="apellido1"
+            size="30"
+            placeholder="Introduzca su 1º apellido..."
+            
+          />
+          2º Apellido:
+          <input
+            type="text"
+            name="apellido2"
+            id="apellido2"
+            size="30"
+            placeholder="Introduzca su 2º apellido..."
+            
+          />
 
-        &nbsp; Fecha de nacimiento: &nbsp; Dia <select name="dia" id="dia"> 
-          </select>
-                    
-          Mes <select name="mes" id="mes">
-              </select>
-              Año <select name="year" id="year">
-            </select>
-            &nbsp; &nbsp; 
-            Sexo <input type="radio" name="Sexo" value="H">Hombre
-            <input type="radio" name="Sexo" value="M">Mujer
+          <br />
+          Direccion postal
+          <textarea
+            name="dir"
+            id="dir"
+            cols="90"
+            rows="3"
+            placeholder="Introduzca aqui su direccion postal"
+          ></textarea>
+          <br /><br />
+          Codigo postal
+          <input type="number" placeholder="Numero postal 28000..." /> &nbsp;
+          Provincia
+          <input type="text" placeholder="Provincia..." /> &nbsp;Poblacion
+          <input type="text" placeholder="Poblacion..." /> Pais
+          <input type="text" placeholder="Pais..." />
+          <br />
+          <br />
+
+          Edad
+          <select name="edad" id="edad"> </select>
+
+          &nbsp;&nbsp; Fecha de nacimiento: &nbsp; Dia
+          <select name="dia" id="dia"> </select>
+
+          Mes
+          <select name="mes" id="mes"> </select>
+          Año
+          <select name="year" id="year"> </select>
+          <br />
+          <br />
+          Sexo <input type="radio" name="Sexo" value="H" />Hombre
+          <input type="radio" name="Sexo" value="M" />Mujer
+          <br />
+          <br />
+          Estudios <br />
+          
+          <input type="checkbox" name="ESO" id="ESO" />E.S.O
+          <input type="checkbox" name="Pruebadeacceso" id="pruebadeacceso" /> Prueba de acceso
+          <input type="checkbox" name="Bachiller" id="bachiller" /> Bachiller
+          <input type="checkbox" name="GradoMedio" id="gradomedio" /> Grado Medio
+          <input type="checkbox" name="Diplomatura" id="diplomatura" />Diplomatura
+          <input type="checkbox" name="Licenciatura" id="linceciatura" />Licenciatura
+          <input type="checkbox" name="Grado" id="grado" />Grado
         </fieldset>
-        
-        </form>
+
+        <br>
+        <br>
+        <fieldset><legend>Datos de Usuario</legend>
+        Correo Electronico <input type="email" id="email" name="email" size="30" placeholder="Correo Electronico..." ><br>
+        Contraseña <input type="password" name="clave1" id="pass1" placeholder="Introduce tu Contraseña"><br>
+        Confirmar Contraseña <input type="password" name="clave2" id="pass2"  placeholder="Confirme su Contraseña">
+        </fieldset>
+        <br><br>
+        <fieldset><legend>Otros</legend>
+        Aficiones<br>
+        <textarea name="aficiones" id="aficiones" cols="50" rows="5"></textarea>
+        <br><br>
+        Carnet de conducir <input type="radio" name="carnet" value="c" />Si
+        <input type="radio" name="carnet" value="c" />No
+        <br><br>
+        <input type="checkbox" name="acepto"/> Acepta la condiciones de uso.
+        </fieldset>
+        <br><br>
+        <input type="submit" name="enviar" value="Enviar">
+        <input type="reset"  name="borrar" value=" Borrar">
+      </form>
     </div>
-</body>
+  </body>
 </html>
