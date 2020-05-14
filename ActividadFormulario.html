@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="ActividadFormulario.js"></script>
+    <link rel="stylesheet" href="css/ActividadFormulario.css">
+    <title>Actividad Formulario</title>
+</head>
+<body onload="inicio();">
+    
+    <div>
+        <h1>Actividad Formulario - Lenguaje de marcas</h1>
+        <form action="mailto:Xavier.robles.r@gmail.com" name=" DatosPersonales" method="POST" onsubmit="return validarForm()">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            Nombre: <input type="text" name="nombre" size="30" placeholder="Introduzca su nombre..." required>
+           1º Apellido: <input type="text" name="apellido1" size="30" placeholder="Introduzca su 1º apellido..." required>
+           2º Apellido: <input type="text" name="apellido2" size="30" placeholder="Introduzca su 2º apellido..." required>
+           
+           <br>
+          Direccion postal <textarea name="dir" id="dir" cols="90" rows="3" placeholder="Introduzca aqui su direccion postal"></textarea>
+          <br><br>
+          Codigo postal <input type="number" placeholder="Numero postal 28000..."> Provincia <input type="text" placeholder="Provincia..."> Poblacion <input type="text" placeholder="Poblacion..."> Pais <input type="text" placeholder="Pais...">
+          <br>
+          <br>
+         
+           
+          Edad <select name="edad" id="edad">
+        </select>
+     
+
+        &nbsp; Fecha de nacimiento: &nbsp; Dia <select name="dia" id="dia"> 
+          </select>
+                    
+          Mes <select name="mes" id="mes">
+              </select>
+              Año <select name="year" id="year">
+            </select>
+            &nbsp; &nbsp; 
+            Sexo <input type="radio" name="H" value="H">Hombre
+            <input type="radio" name="M" value="M">Mujer
+        </fieldset>
+        
+        </form>
+    </div>
+</body>
+</html>
