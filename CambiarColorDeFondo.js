@@ -10,6 +10,10 @@ function setColor(){
     }
     document.body.style.backgroundColor=color;
 }
+function cambiarFuente(NuevaFuente){
+    var elemento = document.getElementById('fuente');
+    elemento.style.fontFamily = NuevaFuente;
+}
 window.onload = function (){
     seleccionar = document.formulario.radio;
     document.body.style.backgroundColor="yellow";
