@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="PedidodeCafe.js"></script>
+    <title>Pedido de Cafe</title>
+</head>
+
+ 
+    
+<form name="cafe" method="POST" action="mailto:Xavier.Robles.R@gmail.com" onsubmit="return validarForm()">
+
+<fieldset>
+    <legend>Pedido de Cafes</legend>
+    Nombre <input type="text" name="nombre" size="30" required>
+    <br>
+    Apellidos <input type="text" name="apellido" size="30" required>
+    <br>
+    Direccion de envio <input type="text" name="dir" size="60" required>
+    <br>
+    Email <input type="email" name="email" size="30" required>
+    <br>
+    Tipos de Cafe:
+    <br><input type="checkbox" name="descafeinado">Descafeinado
+    <select name="cap1">
+        <option value="0">0</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+    <input type="checkbox" name="suave">Suave
+    <select name="cap2">
+        <option value="0">0</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+    <input type="checkbox" name="intenso">Intenso
+    <select name="cap3">
+        <option value="0">0</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+        <option value="25">25</option>
+    </select>
+    <br>
+    <input type="submit" value="Hacer Pedido">
+    <input type="reset" value="Borrar Pedido">
+</fieldset>
+
+
+</form>
+
+
+</body>
+</html>
