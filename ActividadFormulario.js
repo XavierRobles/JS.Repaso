@@ -24,7 +24,7 @@ function year() {
     var n = (new Date()).getFullYear()
     var select = document.getElementById("year");
     for (var i = n; i >= 1900; i--) select.options.add(new Option(i, i)); {
-
+        
     }
 
 }
@@ -33,9 +33,9 @@ function year() {
 function Meses() {
 
     var array = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-    for (var i in array) {
+    for (var i = 0; i < 12; i++) {
         document.getElementById("mes").innerHTML += "<option value='" + array[i] + "'>" + array[i] + "</option>";
-
+       
     }
 }
 
